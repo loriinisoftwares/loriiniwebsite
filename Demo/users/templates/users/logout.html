@@ -1,0 +1,17 @@
+{% extends "sample/base.html" %}
+{% block home %}
+{% endblock home %}
+{% block side %}
+{% endblock %}
+{% block content %}
+<body class="bg" style= "background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/static/sample/sea.jpg');">
+  <div class="content-section" style="margin-left: 250px;">
+    <h2>You have been logged out</h2>
+    <div class="border-top pt-2">
+        <small class="text-muted">
+           <a class="nav-item nav-link text-info" href="{% url 'login' %}">Log In Again</a>
+        </small>
+    </div>
+  </div>
+</body>
+{% endblock content %}
